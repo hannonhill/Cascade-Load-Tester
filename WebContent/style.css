@@ -1,0 +1,43 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	background-color: #DFDFDF;
+	}
+
+#header{
+	background: #234;
+	border-bottom: 1px solid #345;
+	padding-top: 0px;
+	margin: 0px;
+	color: #FC4;
+	font-weight: bold;
+	font-size: 1.4em;	
+}
+
+#content{
+	width: 100%;
+	}
+
+#form{
+	padding: 10px;
+	margin: 10px;
+	background: white;
+	border: 2px solid #ccc;
+	float: left;
+}
+
+#results{
+		padding: 10px;
+	margin: 10px;
+	background: white;
+	border: 2px solid #ccc;
+	float: left;
+	}
+
+#feedback{
+	padding: 10px;
+	margin: 10px;
+	color: brown;
+	font-weight: bold;
+}

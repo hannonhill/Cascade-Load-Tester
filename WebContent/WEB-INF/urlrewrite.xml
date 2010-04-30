@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+<urlrewrite default-match-type="wildcard">
+	<rule>
+	        <from>/</from>
+	        <to>/lt/</to>
+	</rule>
+	<rule match-type="regex">
+	        <from>^([^\.]+)$</from>
+	        <to>/lt/$1</to>
+	</rule>
+	<outbound-rule>
+	        <from>/lt/**</from>
+	        <to>/$1</to>
+	</outbound-rule>
+	
+	<outbound-rule encodefirst="true">
+	  <name>Strip URL Session ID's</name>
+	  <from>^(.*?)(?:\;jsessionid=[^\?#]*)?(\?[^#]*)?(#.*)?$</from>
+	  <to>$1$2$3</to>
+	</outbound-rule>
+</urlrewrite>
