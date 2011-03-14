@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Symlink  extends com.hannonhill.www.ws.ns.AssetOperationService.ExpiringAsset  implements java.io.Serializable {
+public class Symlink  extends com.hannonhill.www.ws.ns.AssetOperationService.ExpiringAsset  implements java.io.Serializable {
     private org.apache.axis.types.URI linkURL;
 
     public Symlink() {
@@ -15,7 +15,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public Symlink(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentFolderId,
            java.lang.String parentFolderPath,
@@ -33,7 +32,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            org.apache.axis.types.URI linkURL) {
         super(
             id,
-            entityType,
             name,
             parentFolderId,
             parentFolderPath,

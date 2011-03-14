@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class TwitterConnector  extends com.hannonhill.www.ws.ns.AssetOperationService.Connector  implements java.io.Serializable {
+public class TwitterConnector  extends com.hannonhill.www.ws.ns.AssetOperationService.Connector  implements java.io.Serializable {
     private java.lang.String destinationId;
 
     private java.lang.String destinationPath;
@@ -17,7 +17,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public TwitterConnector(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentContainerId,
            java.lang.String parentContainerPath,
@@ -35,7 +34,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            java.lang.String destinationPath) {
         super(
             id,
-            entityType,
             name,
             parentContainerId,
             parentContainerPath,

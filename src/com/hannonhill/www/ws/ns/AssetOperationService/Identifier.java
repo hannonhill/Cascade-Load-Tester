@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Identifier  implements java.io.Serializable {
+public class Identifier  implements java.io.Serializable {
     private java.lang.String id;
 
     private com.hannonhill.www.ws.ns.AssetOperationService.Path path;

@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Workflow  extends com.hannonhill.www.ws.ns.AssetOperationService.NamedAsset  implements java.io.Serializable {
+public class Workflow  extends com.hannonhill.www.ws.ns.AssetOperationService.NamedAsset  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.Identifier relatedEntity;
 
     private java.lang.String currentStep;
@@ -16,25 +16,31 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     private com.hannonhill.www.ws.ns.AssetOperationService.WorkflowStep[] unorderedSteps;
 
+    private java.util.Calendar startDate;
+
+    private java.util.Calendar endDate;
+
     public Workflow() {
     }
 
     public Workflow(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            com.hannonhill.www.ws.ns.AssetOperationService.Identifier relatedEntity,
            java.lang.String currentStep,
            com.hannonhill.www.ws.ns.AssetOperationService.WorkflowStep[] orderedSteps,
-           com.hannonhill.www.ws.ns.AssetOperationService.WorkflowStep[] unorderedSteps) {
+           com.hannonhill.www.ws.ns.AssetOperationService.WorkflowStep[] unorderedSteps,
+           java.util.Calendar startDate,
+           java.util.Calendar endDate) {
         super(
             id,
-            entityType,
             name);
         this.relatedEntity = relatedEntity;
         this.currentStep = currentStep;
         this.orderedSteps = orderedSteps;
         this.unorderedSteps = unorderedSteps;
+        this.startDate = startDate;
+        this.endDate = endDate;
     }
 
 
@@ -117,6 +123,46 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
         this.unorderedSteps = unorderedSteps;
     }
 
+
+    /**
+     * Gets the startDate value for this Workflow.
+     * 
+     * @return startDate
+     */
+    public java.util.Calendar getStartDate() {
+        return startDate;
+    }
+
+
+    /**
+     * Sets the startDate value for this Workflow.
+     * 
+     * @param startDate
+     */
+    public void setStartDate(java.util.Calendar startDate) {
+        this.startDate = startDate;
+    }
+
+
+    /**
+     * Gets the endDate value for this Workflow.
+     * 
+     * @return endDate
+     */
+    public java.util.Calendar getEndDate() {
+        return endDate;
+    }
+
+
+    /**
+     * Sets the endDate value for this Workflow.
+     * 
+     * @param endDate
+     */
+    public void setEndDate(java.util.Calendar endDate) {
+        this.endDate = endDate;
+    }
+
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof Workflow)) return false;
@@ -140,7 +186,13 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
               java.util.Arrays.equals(this.orderedSteps, other.getOrderedSteps()))) &&
             ((this.unorderedSteps==null && other.getUnorderedSteps()==null) || 
              (this.unorderedSteps!=null &&
-              java.util.Arrays.equals(this.unorderedSteps, other.getUnorderedSteps())));
+              java.util.Arrays.equals(this.unorderedSteps, other.getUnorderedSteps()))) &&
+            ((this.startDate==null && other.getStartDate()==null) || 
+             (this.startDate!=null &&
+              this.startDate.equals(other.getStartDate()))) &&
+            ((this.endDate==null && other.getEndDate()==null) || 
+             (this.endDate!=null &&
+              this.endDate.equals(other.getEndDate())));
         __equalsCalc = null;
         return _equals;
     }
@@ -180,6 +232,12 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
                 }
             }
         }
+        if (getStartDate() != null) {
+            _hashCode += getStartDate().hashCode();
+        }
+        if (getEndDate() != null) {
+            _hashCode += getEndDate().hashCode();
+        }
         __hashCodeCalc = false;
         return _hashCode;
     }
@@ -217,6 +275,20 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
         elemField.setMinOccurs(0);
         elemField.setNillable(false);
         elemField.setItemQName(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "step"));
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("startDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "startDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "dateTime"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("endDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "endDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "dateTime"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
     }
 

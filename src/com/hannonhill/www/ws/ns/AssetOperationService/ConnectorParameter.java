@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class ConnectorParameter  implements java.io.Serializable {
+public class ConnectorParameter  implements java.io.Serializable {
     private java.lang.String name;
 
     private java.lang.String value;

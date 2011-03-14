@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Operation  implements java.io.Serializable {
+public class Operation  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.Create create;
 
     private com.hannonhill.www.ws.ns.AssetOperationService.Delete delete;

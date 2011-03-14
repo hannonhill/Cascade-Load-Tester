@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class AuditTypes implements java.io.Serializable {
+public class AuditTypes implements java.io.Serializable {
     private java.lang.String _value_;
     private static java.util.HashMap _table_ = new java.util.HashMap();
 
@@ -33,6 +33,9 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
     public static final java.lang.String _activate_version = "activate_version";
     public static final java.lang.String _publish = "publish";
     public static final java.lang.String _unpublish = "unpublish";
+    public static final java.lang.String _recycle = "recycle";
+    public static final java.lang.String _restore = "restore";
+    public static final java.lang.String _move = "move";
     public static final AuditTypes login = new AuditTypes(_login);
     public static final AuditTypes login_failed = new AuditTypes(_login_failed);
     public static final AuditTypes logout = new AuditTypes(_logout);
@@ -49,6 +52,9 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
     public static final AuditTypes activate_version = new AuditTypes(_activate_version);
     public static final AuditTypes publish = new AuditTypes(_publish);
     public static final AuditTypes unpublish = new AuditTypes(_unpublish);
+    public static final AuditTypes recycle = new AuditTypes(_recycle);
+    public static final AuditTypes restore = new AuditTypes(_restore);
+    public static final AuditTypes move = new AuditTypes(_move);
     public java.lang.String getValue() { return _value_;}
     public static AuditTypes fromValue(java.lang.String value)
           throws java.lang.IllegalArgumentException {

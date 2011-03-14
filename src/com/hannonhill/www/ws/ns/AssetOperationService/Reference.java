@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Reference  extends com.hannonhill.www.ws.ns.AssetOperationService.FolderContainedAsset  implements java.io.Serializable {
+public class Reference  extends com.hannonhill.www.ws.ns.AssetOperationService.FolderContainedAsset  implements java.io.Serializable {
     private java.lang.String referencedAssetId;
 
     private java.lang.String referencedAssetPath;
@@ -19,7 +19,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public Reference(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentFolderId,
            java.lang.String parentFolderPath,
@@ -33,7 +32,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            com.hannonhill.www.ws.ns.AssetOperationService.EntityTypeString referencedAssetType) {
         super(
             id,
-            entityType,
             name,
             parentFolderId,
             parentFolderPath,

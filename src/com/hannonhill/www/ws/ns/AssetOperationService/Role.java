@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Role  extends com.hannonhill.www.ws.ns.AssetOperationService.NamedAsset  implements java.io.Serializable {
+public class Role  extends com.hannonhill.www.ws.ns.AssetOperationService.NamedAsset  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.RoleTypes roleType;
 
     private com.hannonhill.www.ws.ns.AssetOperationService.GlobalAbilities globalAbilities;
@@ -19,14 +19,12 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public Role(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            com.hannonhill.www.ws.ns.AssetOperationService.RoleTypes roleType,
            com.hannonhill.www.ws.ns.AssetOperationService.GlobalAbilities globalAbilities,
            com.hannonhill.www.ws.ns.AssetOperationService.SiteAbilities siteAbilities) {
         super(
             id,
-            entityType,
             name);
         this.roleType = roleType;
         this.globalAbilities = globalAbilities;

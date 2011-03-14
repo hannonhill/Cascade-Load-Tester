@@ -34,7 +34,7 @@ public class UserUtil extends AssetUtil
     {
         super(hostname, port, authentication);
     }
-    
+
     /**
      * Creates a new {@link User} on the remote Cascade instance with the
      * given username and a password the same as the username.
@@ -48,12 +48,11 @@ public class UserUtil extends AssetUtil
         user.setUsername(username);
         user.setPassword(username);
         user.setFullName(username);
-        user.setEmail(username+"@hannonhill.com");
+        user.setEmail(username + "@hannonhill.com");
         user.setAuthType(UserAuthTypes.normal);
         user.setGroups(groups);
         user.setRole("Administrator");
         user.setEnabled(true);
-        WebservicesUtils.nullUserValues(user);
         Asset asset = new Asset();
         asset.setUser(user);
         logger.debug("Creating new User on remote Cascade instance");
@@ -67,7 +66,7 @@ public class UserUtil extends AssetUtil
             return null;
         }
     }
-    
+
     /**
      * Deletes a user with the given username from the Cascade instance.
      * 
@@ -75,7 +74,7 @@ public class UserUtil extends AssetUtil
      */
     public void deleteUser(String id)
     {
-        if(id == null)
+        if (id == null)
         {
             logger.debug("Skipping deleting user with null username");
             return;
@@ -84,7 +83,7 @@ public class UserUtil extends AssetUtil
         Identifier identifier = new Identifier();
         identifier.setId(id);
         identifier.setType(EntityTypeString.user);
-        
+
         try
         {
             delete(identifier);

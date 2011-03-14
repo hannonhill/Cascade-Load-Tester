@@ -33,7 +33,7 @@ public class PageUtil extends AssetUtil
     {
         super(hostname, port, authentication);
     }
-    
+
     /**
      * Creates a new page on Cascade instance based on a page existing in the instance.
      * @param id ID of page to copy
@@ -47,7 +47,7 @@ public class PageUtil extends AssetUtil
         Page page;
         try
         {
-            logger.debug("Reading page from Cascade Server instence to copy: "+ id);
+            logger.debug("Reading page from Cascade Server instence to copy: " + id);
             page = handler.read(authentication, identifier).getAsset().getPage();
         }
         catch (RemoteException e1)
@@ -57,16 +57,15 @@ public class PageUtil extends AssetUtil
         }
         //clear out the id since we're creating a new page
         page.setId(null);
-        WebservicesUtils.nullPageValues(page);
         //so that each page has a unique name
-        page.setName(pageName+System.currentTimeMillis());
+        page.setName(pageName + System.currentTimeMillis());
         Asset asset = new Asset();
         asset.setPage(page);
         try
         {
             logger.debug("Creating new page on Cascade Server Instence");
             CreateResult result = handler.create(authentication, asset);
-            if(result.getMessage() != null)
+            if (result.getMessage() != null)
                 logger.info("Result from creating page: " + result.getMessage());
             return result.getCreatedAssetId();
         }
@@ -76,7 +75,7 @@ public class PageUtil extends AssetUtil
             return null;
         }
     }
-    
+
     public void deletePage(String id)
     {
         logger.debug("Deleting a page from Cascade Server instance: " + id);

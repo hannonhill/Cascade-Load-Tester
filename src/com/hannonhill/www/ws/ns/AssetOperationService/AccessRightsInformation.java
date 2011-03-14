@@ -7,7 +7,6 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"})
 public class AccessRightsInformation  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.Identifier identifier;
 

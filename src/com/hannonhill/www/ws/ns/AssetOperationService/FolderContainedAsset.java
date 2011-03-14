@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class FolderContainedAsset  extends com.hannonhill.www.ws.ns.AssetOperationService.NamedAsset  implements java.io.Serializable {
+public class FolderContainedAsset  extends com.hannonhill.www.ws.ns.AssetOperationService.NamedAsset  implements java.io.Serializable {
     private java.lang.String parentFolderId;
 
     private java.lang.String parentFolderPath;
@@ -27,7 +27,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public FolderContainedAsset(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentFolderId,
            java.lang.String parentFolderPath,
@@ -38,7 +37,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            java.lang.String siteName) {
         super(
             id,
-            entityType,
             name);
         this.parentFolderId = parentFolderId;
         this.parentFolderPath = parentFolderPath;

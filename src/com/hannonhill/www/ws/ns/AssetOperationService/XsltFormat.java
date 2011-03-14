@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class XsltFormat  extends com.hannonhill.www.ws.ns.AssetOperationService.FolderContainedAsset  implements java.io.Serializable {
+public class XsltFormat  extends com.hannonhill.www.ws.ns.AssetOperationService.FolderContainedAsset  implements java.io.Serializable {
     private java.lang.String xml;
 
     public XsltFormat() {
@@ -15,7 +15,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public XsltFormat(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentFolderId,
            java.lang.String parentFolderPath,
@@ -27,7 +26,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            java.lang.String xml) {
         super(
             id,
-            entityType,
             name,
             parentFolderId,
             parentFolderPath,

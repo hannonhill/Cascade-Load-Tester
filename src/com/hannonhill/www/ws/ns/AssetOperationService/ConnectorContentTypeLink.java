@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class ConnectorContentTypeLink  implements java.io.Serializable {
+public class ConnectorContentTypeLink  implements java.io.Serializable {
     private java.lang.String contentTypeId;
 
     private java.lang.String contentTypePath;

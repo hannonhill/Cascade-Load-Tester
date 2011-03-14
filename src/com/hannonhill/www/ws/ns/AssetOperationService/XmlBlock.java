@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class XmlBlock  extends com.hannonhill.www.ws.ns.AssetOperationService.Block  implements java.io.Serializable {
+public class XmlBlock  extends com.hannonhill.www.ws.ns.AssetOperationService.Block  implements java.io.Serializable {
     private java.lang.String xml;
 
     public XmlBlock() {
@@ -15,7 +15,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public XmlBlock(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentFolderId,
            java.lang.String parentFolderPath,
@@ -33,7 +32,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            java.lang.String xml) {
         super(
             id,
-            entityType,
             name,
             parentFolderId,
             parentFolderPath,

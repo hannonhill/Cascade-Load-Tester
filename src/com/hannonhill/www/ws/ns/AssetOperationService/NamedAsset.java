@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class NamedAsset  extends com.hannonhill.www.ws.ns.AssetOperationService.BaseAsset  implements java.io.Serializable {
+public class NamedAsset  extends com.hannonhill.www.ws.ns.AssetOperationService.BaseAsset  implements java.io.Serializable {
     private java.lang.String name;
 
     public NamedAsset() {
@@ -15,11 +15,9 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public NamedAsset(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name) {
         super(
-            id,
-            entityType);
+            id);
         this.name = name;
     }
 

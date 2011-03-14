@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class MetadataSet  extends com.hannonhill.www.ws.ns.AssetOperationService.ContaineredAsset  implements java.io.Serializable {
+public class MetadataSet  extends com.hannonhill.www.ws.ns.AssetOperationService.ContaineredAsset  implements java.io.Serializable {
     private java.lang.Boolean authorFieldRequired;
 
     private com.hannonhill.www.ws.ns.AssetOperationService.MetadataFieldVisibility authorFieldVisibility;
@@ -55,7 +55,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public MetadataSet(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentContainerId,
            java.lang.String parentContainerPath,
@@ -85,7 +84,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            com.hannonhill.www.ws.ns.AssetOperationService.DynamicMetadataFieldDefinition[] dynamicMetadataFieldDefinitions) {
         super(
             id,
-            entityType,
             name,
             parentContainerId,
             parentContainerPath,

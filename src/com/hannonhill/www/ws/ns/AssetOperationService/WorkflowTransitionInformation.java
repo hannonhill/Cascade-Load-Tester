@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class WorkflowTransitionInformation  implements java.io.Serializable {
+public class WorkflowTransitionInformation  implements java.io.Serializable {
     private java.lang.String workflowId;
 
     private java.lang.String actionIdentifier;

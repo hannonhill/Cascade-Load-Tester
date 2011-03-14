@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Metadata  implements java.io.Serializable {
+public class Metadata  implements java.io.Serializable {
     private java.lang.String author;
 
     private java.lang.String displayName;

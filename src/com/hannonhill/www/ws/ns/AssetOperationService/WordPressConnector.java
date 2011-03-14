@@ -7,13 +7,12 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked", "unused"}) public class WordPressConnector  extends com.hannonhill.www.ws.ns.AssetOperationService.Connector  implements java.io.Serializable {
+public class WordPressConnector  extends com.hannonhill.www.ws.ns.AssetOperationService.Connector  implements java.io.Serializable {
     public WordPressConnector() {
     }
 
     public WordPressConnector(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentContainerId,
            java.lang.String parentContainerPath,
@@ -29,7 +28,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            com.hannonhill.www.ws.ns.AssetOperationService.ConnectorContentTypeLink[] connectorContentTypeLinks) {
         super(
             id,
-            entityType,
             name,
             parentContainerId,
             parentContainerPath,

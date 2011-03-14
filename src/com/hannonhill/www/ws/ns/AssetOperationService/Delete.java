@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Delete  implements java.io.Serializable {
+public class Delete  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.WorkflowConfiguration workflowConfiguration;
 
     private com.hannonhill.www.ws.ns.AssetOperationService.Identifier identifier;

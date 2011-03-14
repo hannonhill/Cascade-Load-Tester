@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class CopyParameters  implements java.io.Serializable {
+public class CopyParameters  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.Identifier destinationContainerIdentifier;
 
     private boolean doWorkflow;

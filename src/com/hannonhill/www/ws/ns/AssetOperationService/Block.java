@@ -7,13 +7,12 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked", "unused"}) public class Block  extends com.hannonhill.www.ws.ns.AssetOperationService.ExpiringAsset  implements java.io.Serializable {
+public class Block  extends com.hannonhill.www.ws.ns.AssetOperationService.ExpiringAsset  implements java.io.Serializable {
     public Block() {
     }
 
     public Block(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentFolderId,
            java.lang.String parentFolderPath,
@@ -30,7 +29,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            java.lang.Boolean expirationFolderRecycled) {
         super(
             id,
-            entityType,
             name,
             parentFolderId,
             parentFolderPath,

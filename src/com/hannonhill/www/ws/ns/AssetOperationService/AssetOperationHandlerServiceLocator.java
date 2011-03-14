@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class AssetOperationHandlerServiceLocator extends org.apache.axis.client.Service implements com.hannonhill.www.ws.ns.AssetOperationService.AssetOperationHandlerService {
+public class AssetOperationHandlerServiceLocator extends org.apache.axis.client.Service implements com.hannonhill.www.ws.ns.AssetOperationService.AssetOperationHandlerService {
 
     public AssetOperationHandlerServiceLocator() {
     }
@@ -22,7 +22,7 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
     }
 
     // Use to get a proxy class for AssetOperationService
-    private java.lang.String AssetOperationService_address = "http://localhost:8080/ws/services/AssetOperationService";
+    private java.lang.String AssetOperationService_address = "http://10.0.1.172:8080/ws/services/AssetOperationService";
 
     public java.lang.String getAssetOperationServiceAddress() {
         return AssetOperationService_address;

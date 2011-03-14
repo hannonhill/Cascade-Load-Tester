@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Edit  implements java.io.Serializable {
+public class Edit  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.Asset asset;
 
     public Edit() {

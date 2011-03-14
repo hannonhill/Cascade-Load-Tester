@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Authentication  implements java.io.Serializable {
+public class Authentication  implements java.io.Serializable {
     private java.lang.String password;
 
     private java.lang.String username;

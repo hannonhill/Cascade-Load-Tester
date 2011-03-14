@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class IndexBlock  extends com.hannonhill.www.ws.ns.AssetOperationService.Block  implements java.io.Serializable {
+public class IndexBlock  extends com.hannonhill.www.ws.ns.AssetOperationService.Block  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.IndexBlockType indexBlockType;
 
     private java.lang.String indexedFolderId;
@@ -63,7 +63,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public IndexBlock(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentFolderId,
            java.lang.String parentFolderPath,
@@ -105,7 +104,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            com.hannonhill.www.ws.ns.AssetOperationService.IndexBlockSortOrder sortOrder) {
         super(
             id,
-            entityType,
             name,
             parentFolderId,
             parentFolderPath,

@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Audit  implements java.io.Serializable {
+public class Audit  implements java.io.Serializable {
     private java.lang.String user;
 
     private com.hannonhill.www.ws.ns.AssetOperationService.AuditTypes action;

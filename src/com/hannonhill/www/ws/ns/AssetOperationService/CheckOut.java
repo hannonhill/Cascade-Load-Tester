@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class CheckOut  implements java.io.Serializable {
+public class CheckOut  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.Identifier identifier;
 
     public CheckOut() {

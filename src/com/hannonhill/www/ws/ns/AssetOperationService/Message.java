@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Message  extends com.hannonhill.www.ws.ns.AssetOperationService.BaseAsset  implements java.io.Serializable {
+public class Message  extends com.hannonhill.www.ws.ns.AssetOperationService.BaseAsset  implements java.io.Serializable {
     private java.lang.String to;
 
     private java.lang.String from;
@@ -23,15 +23,13 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public Message(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String to,
            java.lang.String from,
            java.lang.String subject,
            java.util.Calendar date,
            java.lang.String body) {
         super(
-            id,
-            entityType);
+            id);
         this.to = to;
         this.from = from;
         this.subject = subject;

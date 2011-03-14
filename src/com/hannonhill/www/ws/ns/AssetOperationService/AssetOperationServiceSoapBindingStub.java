@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"unused", "unchecked"}) public class AssetOperationServiceSoapBindingStub extends org.apache.axis.client.Stub implements com.hannonhill.www.ws.ns.AssetOperationService.AssetOperationHandler {
+public class AssetOperationServiceSoapBindingStub extends org.apache.axis.client.Stub implements com.hannonhill.www.ws.ns.AssetOperationService.AssetOperationHandler {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();
@@ -628,6 +628,38 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "contentTypePageConfiguration");
+            cachedSerQNames.add(qName);
+            cls = com.hannonhill.www.ws.ns.AssetOperationService.ContentTypePageConfiguration.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "contentTypePageConfigurationDestinations");
+            cachedSerQNames.add(qName);
+            cls = com.hannonhill.www.ws.ns.AssetOperationService.Identifier[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "identifier");
+            qName2 = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "destination");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "contentTypePageConfigurationPublishMode");
+            cachedSerQNames.add(qName);
+            cls = com.hannonhill.www.ws.ns.AssetOperationService.ContentTypePageConfigurationPublishMode.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "contentTypePageConfigurations");
+            cachedSerQNames.add(qName);
+            cls = com.hannonhill.www.ws.ns.AssetOperationService.ContentTypePageConfiguration[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "contentTypePageConfiguration");
+            qName2 = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "contentTypePageConfiguration");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
             qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "copy");
             cachedSerQNames.add(qName);
             cls = com.hannonhill.www.ws.ns.AssetOperationService.Copy.class;
@@ -662,6 +694,36 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "dataDefinition");
+            cachedSerQNames.add(qName);
+            cls = com.hannonhill.www.ws.ns.AssetOperationService.DataDefinition.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "dataDefinitionContainer");
+            cachedSerQNames.add(qName);
+            cls = com.hannonhill.www.ws.ns.AssetOperationService.DataDefinitionContainer.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "dayOfWeek");
+            cachedSerQNames.add(qName);
+            cls = com.hannonhill.www.ws.ns.AssetOperationService.DayOfWeek.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(enumsf);
+            cachedDeserFactories.add(enumdf);
+
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "daysOfWeek");
+            cachedSerQNames.add(qName);
+            cls = com.hannonhill.www.ws.ns.AssetOperationService.DayOfWeek[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "dayOfWeek");
+            qName2 = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "dayOfWeek");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
 
             qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "delete");
             cachedSerQNames.add(qName);
@@ -819,6 +881,13 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
             qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "global-abilities");
             cachedSerQNames.add(qName);
             cls = com.hannonhill.www.ws.ns.AssetOperationService.GlobalAbilities.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "googleAnalyticsConnector");
+            cachedSerQNames.add(qName);
+            cls = com.hannonhill.www.ws.ns.AssetOperationService.GoogleAnalyticsConnector.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
@@ -1018,6 +1087,21 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
+    }
+    private void addBindings1() {
+            java.lang.Class cls;
+            javax.xml.namespace.QName qName;
+            javax.xml.namespace.QName qName2;
+            java.lang.Class beansf = org.apache.axis.encoding.ser.BeanSerializerFactory.class;
+            java.lang.Class beandf = org.apache.axis.encoding.ser.BeanDeserializerFactory.class;
+            java.lang.Class enumsf = org.apache.axis.encoding.ser.EnumSerializerFactory.class;
+            java.lang.Class enumdf = org.apache.axis.encoding.ser.EnumDeserializerFactory.class;
+            java.lang.Class arraysf = org.apache.axis.encoding.ser.ArraySerializerFactory.class;
+            java.lang.Class arraydf = org.apache.axis.encoding.ser.ArrayDeserializerFactory.class;
+            java.lang.Class simplesf = org.apache.axis.encoding.ser.SimpleSerializerFactory.class;
+            java.lang.Class simpledf = org.apache.axis.encoding.ser.SimpleDeserializerFactory.class;
+            java.lang.Class simplelistsf = org.apache.axis.encoding.ser.SimpleListSerializerFactory.class;
+            java.lang.Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
             qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "publish");
             cachedSerQNames.add(qName);
             cls = com.hannonhill.www.ws.ns.AssetOperationService.Publish.class;
@@ -1083,21 +1167,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
-    }
-    private void addBindings1() {
-            java.lang.Class cls;
-            javax.xml.namespace.QName qName;
-            javax.xml.namespace.QName qName2;
-            java.lang.Class beansf = org.apache.axis.encoding.ser.BeanSerializerFactory.class;
-            java.lang.Class beandf = org.apache.axis.encoding.ser.BeanDeserializerFactory.class;
-            java.lang.Class enumsf = org.apache.axis.encoding.ser.EnumSerializerFactory.class;
-            java.lang.Class enumdf = org.apache.axis.encoding.ser.EnumDeserializerFactory.class;
-            java.lang.Class arraysf = org.apache.axis.encoding.ser.ArraySerializerFactory.class;
-            java.lang.Class arraydf = org.apache.axis.encoding.ser.ArrayDeserializerFactory.class;
-            java.lang.Class simplesf = org.apache.axis.encoding.ser.SimpleSerializerFactory.class;
-            java.lang.Class simpledf = org.apache.axis.encoding.ser.SimpleDeserializerFactory.class;
-            java.lang.Class simplelistsf = org.apache.axis.encoding.ser.SimpleListSerializerFactory.class;
-            java.lang.Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
             qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "readResult");
             cachedSerQNames.add(qName);
             cls = com.hannonhill.www.ws.ns.AssetOperationService.ReadResult.class;
@@ -1258,20 +1327,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
             cachedSerFactories.add(enumsf);
             cachedDeserFactories.add(enumdf);
 
-            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "structuredDataDefinition");
-            cachedSerQNames.add(qName);
-            cls = com.hannonhill.www.ws.ns.AssetOperationService.StructuredDataDefinition.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "structuredDataDefinitionContainer");
-            cachedSerQNames.add(qName);
-            cls = com.hannonhill.www.ws.ns.AssetOperationService.StructuredDataDefinitionContainer.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
             qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "symlink");
             cachedSerQNames.add(qName);
             cls = com.hannonhill.www.ws.ns.AssetOperationService.Symlink.class;
@@ -1299,13 +1354,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "timeUnits");
-            cachedSerQNames.add(qName);
-            cls = com.hannonhill.www.ws.ns.AssetOperationService.TimeUnits.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(enumsf);
-            cachedDeserFactories.add(enumdf);
 
             qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "transportContainer");
             cachedSerQNames.add(qName);
@@ -1439,9 +1487,9 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
-            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "xhtmlStructuredDataBlock");
+            qName = new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "xhtmlDataDefinitionBlock");
             cachedSerQNames.add(qName);
-            cls = com.hannonhill.www.ws.ns.AssetOperationService.XhtmlStructuredDataBlock.class;
+            cls = com.hannonhill.www.ws.ns.AssetOperationService.XhtmlDataDefinitionBlock.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);

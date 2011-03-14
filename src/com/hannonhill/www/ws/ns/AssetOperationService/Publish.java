@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Publish  implements java.io.Serializable {
+public class Publish  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.Identifier identifier;
 
     public Publish() {

@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class User  implements java.io.Serializable {
+public class User  implements java.io.Serializable {
     private java.lang.String username;
 
     private java.lang.String fullName;
@@ -26,7 +26,9 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     private java.lang.String role;
 
-    private com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType;
+    private java.lang.String defaultSiteId;
+
+    private java.lang.String defaultSiteName;
 
     public User() {
     }
@@ -41,7 +43,8 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            java.lang.String groups,
            java.lang.String defaultGroup,
            java.lang.String role,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType) {
+           java.lang.String defaultSiteId,
+           java.lang.String defaultSiteName) {
            this.username = username;
            this.fullName = fullName;
            this.email = email;
@@ -51,7 +54,8 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            this.groups = groups;
            this.defaultGroup = defaultGroup;
            this.role = role;
-           this.entityType = entityType;
+           this.defaultSiteId = defaultSiteId;
+           this.defaultSiteName = defaultSiteName;
     }
 
 
@@ -236,22 +240,42 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
 
     /**
-     * Gets the entityType value for this User.
+     * Gets the defaultSiteId value for this User.
      * 
-     * @return entityType
+     * @return defaultSiteId
      */
-    public com.hannonhill.www.ws.ns.AssetOperationService.EntityType getEntityType() {
-        return entityType;
+    public java.lang.String getDefaultSiteId() {
+        return defaultSiteId;
     }
 
 
     /**
-     * Sets the entityType value for this User.
+     * Sets the defaultSiteId value for this User.
      * 
-     * @param entityType
+     * @param defaultSiteId
      */
-    public void setEntityType(com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType) {
-        this.entityType = entityType;
+    public void setDefaultSiteId(java.lang.String defaultSiteId) {
+        this.defaultSiteId = defaultSiteId;
+    }
+
+
+    /**
+     * Gets the defaultSiteName value for this User.
+     * 
+     * @return defaultSiteName
+     */
+    public java.lang.String getDefaultSiteName() {
+        return defaultSiteName;
+    }
+
+
+    /**
+     * Sets the defaultSiteName value for this User.
+     * 
+     * @param defaultSiteName
+     */
+    public void setDefaultSiteName(java.lang.String defaultSiteName) {
+        this.defaultSiteName = defaultSiteName;
     }
 
     private java.lang.Object __equalsCalc = null;
@@ -293,9 +317,12 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
             ((this.role==null && other.getRole()==null) || 
              (this.role!=null &&
               this.role.equals(other.getRole()))) &&
-            ((this.entityType==null && other.getEntityType()==null) || 
-             (this.entityType!=null &&
-              this.entityType.equals(other.getEntityType())));
+            ((this.defaultSiteId==null && other.getDefaultSiteId()==null) || 
+             (this.defaultSiteId!=null &&
+              this.defaultSiteId.equals(other.getDefaultSiteId()))) &&
+            ((this.defaultSiteName==null && other.getDefaultSiteName()==null) || 
+             (this.defaultSiteName!=null &&
+              this.defaultSiteName.equals(other.getDefaultSiteName())));
         __equalsCalc = null;
         return _equals;
     }
@@ -334,8 +361,11 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
         if (getRole() != null) {
             _hashCode += getRole().hashCode();
         }
-        if (getEntityType() != null) {
-            _hashCode += getEntityType().hashCode();
+        if (getDefaultSiteId() != null) {
+            _hashCode += getDefaultSiteId().hashCode();
+        }
+        if (getDefaultSiteName() != null) {
+            _hashCode += getDefaultSiteName().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -406,11 +436,18 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("entityType");
-        elemField.setXmlName(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "entityType"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "entity-type"));
+        elemField.setFieldName("defaultSiteId");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "defaultSiteId"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
-        elemField.setNillable(false);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("defaultSiteName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "defaultSiteName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
     }
 

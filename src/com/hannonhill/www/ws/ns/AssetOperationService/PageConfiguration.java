@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class PageConfiguration  extends com.hannonhill.www.ws.ns.AssetOperationService.BaseAsset  implements java.io.Serializable {
+public class PageConfiguration  extends com.hannonhill.www.ws.ns.AssetOperationService.BaseAsset  implements java.io.Serializable {
     private java.lang.String name;
 
     private boolean defaultConfiguration;
@@ -37,7 +37,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public PageConfiguration(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            boolean defaultConfiguration,
            java.lang.String templateId,
@@ -51,8 +50,7 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            java.lang.Boolean includeXMLDeclaration,
            java.lang.Boolean publishable) {
         super(
-            id,
-            entityType);
+            id);
         this.name = name;
         this.defaultConfiguration = defaultConfiguration;
         this.templateId = templateId;

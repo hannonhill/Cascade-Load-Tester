@@ -7,19 +7,15 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class BaseAsset  implements java.io.Serializable {
+public class BaseAsset  implements java.io.Serializable {
     private java.lang.String id;
-
-    private com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType;
 
     public BaseAsset() {
     }
 
     public BaseAsset(
-           java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType) {
+           java.lang.String id) {
            this.id = id;
-           this.entityType = entityType;
     }
 
 
@@ -42,26 +38,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
         this.id = id;
     }
 
-
-    /**
-     * Gets the entityType value for this BaseAsset.
-     * 
-     * @return entityType
-     */
-    public com.hannonhill.www.ws.ns.AssetOperationService.EntityType getEntityType() {
-        return entityType;
-    }
-
-
-    /**
-     * Sets the entityType value for this BaseAsset.
-     * 
-     * @param entityType
-     */
-    public void setEntityType(com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType) {
-        this.entityType = entityType;
-    }
-
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof BaseAsset)) return false;
@@ -76,10 +52,7 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
         _equals = true && 
             ((this.id==null && other.getId()==null) || 
              (this.id!=null &&
-              this.id.equals(other.getId()))) &&
-            ((this.entityType==null && other.getEntityType()==null) || 
-             (this.entityType!=null &&
-              this.entityType.equals(other.getEntityType())));
+              this.id.equals(other.getId())));
         __equalsCalc = null;
         return _equals;
     }
@@ -93,9 +66,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
         int _hashCode = 1;
         if (getId() != null) {
             _hashCode += getId().hashCode();
-        }
-        if (getEntityType() != null) {
-            _hashCode += getEntityType().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -111,13 +81,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
         elemField.setFieldName("id");
         elemField.setXmlName(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "id"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("entityType");
-        elemField.setXmlName(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "entityType"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "entity-type"));
         elemField.setMinOccurs(0);
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);

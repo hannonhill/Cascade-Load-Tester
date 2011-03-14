@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Connector  extends com.hannonhill.www.ws.ns.AssetOperationService.ContaineredAsset  implements java.io.Serializable {
+public class Connector  extends com.hannonhill.www.ws.ns.AssetOperationService.ContaineredAsset  implements java.io.Serializable {
     private java.lang.String auth1;
 
     private java.lang.String auth2;
@@ -27,7 +27,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public Connector(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentContainerId,
            java.lang.String parentContainerPath,
@@ -43,7 +42,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            com.hannonhill.www.ws.ns.AssetOperationService.ConnectorContentTypeLink[] connectorContentTypeLinks) {
         super(
             id,
-            entityType,
             name,
             parentContainerId,
             parentContainerPath,
@@ -337,6 +335,7 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
         elemField.setFieldName("connectorContentTypeLinks");
         elemField.setXmlName(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "connectorContentTypeLinks"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "connector-content-type-link"));
+        elemField.setMinOccurs(0);
         elemField.setNillable(false);
         elemField.setItemQName(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "connectorContentTypeLink"));
         typeDesc.addFieldDesc(elemField);

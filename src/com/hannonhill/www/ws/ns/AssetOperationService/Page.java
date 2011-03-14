@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Page  extends com.hannonhill.www.ws.ns.AssetOperationService.PublishableAsset  implements java.io.Serializable {
+public class Page  extends com.hannonhill.www.ws.ns.AssetOperationService.PublishableAsset  implements java.io.Serializable {
     private java.lang.String configurationSetId;
 
     private java.lang.String configurationSetPath;
@@ -27,7 +27,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public Page(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentFolderId,
            java.lang.String parentFolderPath,
@@ -55,7 +54,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            com.hannonhill.www.ws.ns.AssetOperationService.PageConfiguration[] pageConfigurations) {
         super(
             id,
-            entityType,
             name,
             parentFolderId,
             parentFolderPath,

@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class PageConfigurationSetContainer  extends com.hannonhill.www.ws.ns.AssetOperationService.ContaineredAsset  implements java.io.Serializable {
+public class PageConfigurationSetContainer  extends com.hannonhill.www.ws.ns.AssetOperationService.ContaineredAsset  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.Identifier[] children;
 
     public PageConfigurationSetContainer() {
@@ -15,7 +15,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public PageConfigurationSetContainer(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentContainerId,
            java.lang.String parentContainerPath,
@@ -25,7 +24,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            com.hannonhill.www.ws.ns.AssetOperationService.Identifier[] children) {
         super(
             id,
-            entityType,
             name,
             parentContainerId,
             parentContainerPath,

@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class AssetFactoryContainer  extends com.hannonhill.www.ws.ns.AssetOperationService.ContaineredAsset  implements java.io.Serializable {
+public class AssetFactoryContainer  extends com.hannonhill.www.ws.ns.AssetOperationService.ContaineredAsset  implements java.io.Serializable {
     private java.lang.String applicableGroups;
 
     private com.hannonhill.www.ws.ns.AssetOperationService.Identifier[] children;
@@ -17,7 +17,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public AssetFactoryContainer(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentContainerId,
            java.lang.String parentContainerPath,
@@ -28,7 +27,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            com.hannonhill.www.ws.ns.AssetOperationService.Identifier[] children) {
         super(
             id,
-            entityType,
             name,
             parentContainerId,
             parentContainerPath,
@@ -136,6 +134,7 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
         elemField.setFieldName("applicableGroups");
         elemField.setXmlName(new javax.xml.namespace.QName("http://www.hannonhill.com/ws/ns/AssetOperationService", "applicableGroups"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();

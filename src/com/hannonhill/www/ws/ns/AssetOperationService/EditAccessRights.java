@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class EditAccessRights  implements java.io.Serializable {
+public class EditAccessRights  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.AccessRightsInformation accessRightsInformation;
 
     private java.lang.Boolean applyToChildren;

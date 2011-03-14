@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class Path  implements java.io.Serializable {
+public class Path  implements java.io.Serializable {
     private java.lang.String path;
 
     private java.lang.String siteId;

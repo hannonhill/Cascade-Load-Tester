@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class WorkflowStep  implements java.io.Serializable {
+public class WorkflowStep  implements java.io.Serializable {
     private java.lang.String identifier;
 
     private java.lang.String label;

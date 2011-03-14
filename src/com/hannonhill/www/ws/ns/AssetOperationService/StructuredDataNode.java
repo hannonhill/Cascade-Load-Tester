@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class StructuredDataNode  implements java.io.Serializable {
+public class StructuredDataNode  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.StructuredDataType type;
 
     private java.lang.String identifier;

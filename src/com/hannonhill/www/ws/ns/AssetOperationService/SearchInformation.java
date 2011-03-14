@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class SearchInformation  implements java.io.Serializable {
+public class SearchInformation  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.SearchMatchType matchType;
 
     private java.lang.String assetName;

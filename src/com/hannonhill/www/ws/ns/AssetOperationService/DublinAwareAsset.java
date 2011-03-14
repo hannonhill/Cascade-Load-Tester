@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class DublinAwareAsset  extends com.hannonhill.www.ws.ns.AssetOperationService.FolderContainedAsset  implements java.io.Serializable {
+public class DublinAwareAsset  extends com.hannonhill.www.ws.ns.AssetOperationService.FolderContainedAsset  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.Metadata metadata;
 
     private java.lang.String metadataSetId;
@@ -19,7 +19,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public DublinAwareAsset(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentFolderId,
            java.lang.String parentFolderPath,
@@ -33,7 +32,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            java.lang.String metadataSetPath) {
         super(
             id,
-            entityType,
             name,
             parentFolderId,
             parentFolderPath,

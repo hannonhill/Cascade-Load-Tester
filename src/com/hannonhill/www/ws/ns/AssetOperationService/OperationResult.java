@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class OperationResult  implements java.io.Serializable {
+public class OperationResult  implements java.io.Serializable {
     private java.lang.String success;
 
     private java.lang.String message;

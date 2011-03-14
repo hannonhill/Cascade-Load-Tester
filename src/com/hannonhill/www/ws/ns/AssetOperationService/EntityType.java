@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class EntityType  implements java.io.Serializable {
+public class EntityType  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.EntityTypeString name;
 
     public EntityType() {

@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class FtpTransport  extends com.hannonhill.www.ws.ns.AssetOperationService.ContaineredAsset  implements java.io.Serializable {
+public class FtpTransport  extends com.hannonhill.www.ws.ns.AssetOperationService.ContaineredAsset  implements java.io.Serializable {
     private java.lang.String hostName;
 
     private org.apache.axis.types.PositiveInteger port;
@@ -27,7 +27,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public FtpTransport(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentContainerId,
            java.lang.String parentContainerPath,
@@ -43,7 +42,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            java.lang.Boolean doPASV) {
         super(
             id,
-            entityType,
             name,
             parentContainerId,
             parentContainerPath,

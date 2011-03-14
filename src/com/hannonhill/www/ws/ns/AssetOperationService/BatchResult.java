@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class BatchResult  implements java.io.Serializable {
+public class BatchResult  implements java.io.Serializable {
     private com.hannonhill.www.ws.ns.AssetOperationService.OperationResult operationResult;
 
     private com.hannonhill.www.ws.ns.AssetOperationService.CheckOutResult checkOutResult;

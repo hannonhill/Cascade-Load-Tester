@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class RoleAssignment  implements java.io.Serializable {
+public class RoleAssignment  implements java.io.Serializable {
     private java.lang.String roleId;
 
     private java.lang.String roleName;

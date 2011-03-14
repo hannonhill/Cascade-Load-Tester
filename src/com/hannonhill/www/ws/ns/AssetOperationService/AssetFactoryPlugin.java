@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class AssetFactoryPlugin  implements java.io.Serializable {
+public class AssetFactoryPlugin  implements java.io.Serializable {
     private java.lang.String name;
 
     private com.hannonhill.www.ws.ns.AssetOperationService.AssetFactoryPluginParameter[] parameters;

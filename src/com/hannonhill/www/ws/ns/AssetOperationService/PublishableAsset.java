@@ -7,7 +7,7 @@
 
 package com.hannonhill.www.ws.ns.AssetOperationService;
 
-@SuppressWarnings({"serial", "unchecked"}) public class PublishableAsset  extends com.hannonhill.www.ws.ns.AssetOperationService.ExpiringAsset  implements java.io.Serializable {
+public class PublishableAsset  extends com.hannonhill.www.ws.ns.AssetOperationService.ExpiringAsset  implements java.io.Serializable {
     private java.lang.Boolean shouldBePublished;
 
     private java.lang.Boolean shouldBeIndexed;
@@ -21,7 +21,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
 
     public PublishableAsset(
            java.lang.String id,
-           com.hannonhill.www.ws.ns.AssetOperationService.EntityType entityType,
            java.lang.String name,
            java.lang.String parentFolderId,
            java.lang.String parentFolderPath,
@@ -42,7 +41,6 @@ package com.hannonhill.www.ws.ns.AssetOperationService;
            java.lang.String lastPublishedBy) {
         super(
             id,
-            entityType,
             name,
             parentFolderId,
             parentFolderPath,
